@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
     <link rel="stylesheet" href="styles.css">
     <title>Sabiduría Moderna</title>
 </head>
@@ -30,8 +32,11 @@
             <!--Averiguar como poner un input para recibir su informacion de mail y nombres aqui-->
         </div>
         <div class="subscribe">
-            <input type="email" placeholder="tu@mail.com" >
-            <button>Subscribirme</button>
+            <form id="myForm" action="https://formsubmit.co/ibhol1702@gmail.com" method="POST">
+                <input type="text" id="name" name="name" placeholder="Tu nombre" required class="mail">
+                <input type="email" id="email" name="email" placeholder="tu@email.com" required class="mail">
+                <input type="submit" value="Subscribeté" class="button">
+            </form>
         </div>
     </div>
     <div class="page-break"></div>

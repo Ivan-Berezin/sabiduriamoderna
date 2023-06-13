@@ -61,19 +61,19 @@
     border-bottom: 5px solid black;
 }
 
-.subscribe {
+.subscribe, form{
     display: flex;
     flex-direction: column;
     justify-content:flex-start;
     gap: 25px;
 }
 
-.subscribe >input {
+.subscribe >input, .mail{
     min-height: 36px;
     min-width: 300px;
 }
 
-.subscribe >button {
+.subscribe >button, .button {
     min-height: 36px;
 }
 
@@ -86,8 +86,7 @@
 
 .img-background {
     background-color: black;
-    padding-left: 100%;
-    padding-right: 100%;
+    width: auto;
 }
 
 .articles {
@@ -121,9 +120,7 @@
     max-width: 500px;
 }
 
-.first-article {
-    
-}
+
 
 .article >h3 {
     font-size: 24px;
