@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <link rel="icon" href="media/favicon.ico" type="image/x-icon">
 
     <link rel="stylesheet" href="styles.css">
     <title>Sabiduría Moderna</title>
@@ -13,11 +13,22 @@
     <header class="header">
         <div class="Sabiduria-Moderna">Sabiduría Moderna</div>
         <nav class="header-nav">
-            <div class="header-link">Artículos</div>
-            <div class="header-link">Coaching</div>
-            <div class="header-link">Comunidad</div>
-            <div class="header-link">Subscribete</div>
+            <a class="header-link">Artículos</a>
+            <a class="header-link">Coaching</a>
+            <a class="header-link">Comunidad</a>
+            <a class="header-link">Subscribete</a>
         </nav>
+
+            <nav class="header-nav-dropdown">
+                <img class="dropbtn" src="media/dropdowncanva.png"> 
+                <div class="dropdown-content">
+                    <img class="black-dropbtn" src="media/blackdropdowncanva.png">
+                    <a class="header-link">Artículos</a>
+                    <a class="header-link">Coaching</a>
+                    <a class="header-link">Comunidad</a>
+                    <a class="header-link">Subscribete</a>
+                </div>
+            </nav>
     </header>
     <div class="intro">
         <h1 class="title">Sabiduría Antigua para el Hombre Moderno</h1>
@@ -59,7 +70,7 @@
                 <img src="media/Socrates.jpg" class="article-img">
                 <h3>Como hacer amigos como Socrates</h3>
                 <h4>12 Junio 2023</h4>
-                <p>¿Tienes dificultades haciendo amigos? ¿No entiendes bien exactamente qué es un amigo? En este ensayo realizó un analísis del Lisis un texto Socratico donde Socrates nos enseña el arte de hacer amigos. ¿Podra ser algo más sencillo de lo que uno cree?</p>
+                <p>¿Tienes dificultades haciendo amigos? ¿No entiendes bien exactamente qué es un amigo? En este ensayo realizó un analísis del Lisis un texto Socratico donde Socrates nos enseña el arte de hacer amigos. ¿Podrá ser algo más sencillo de lo que uno cree?</p>
                 </a>
             </div>
         </div>
@@ -67,5 +78,21 @@
     <footer>
         <div><a href="sources.html" class="footer-text">Fuentes</a></div>
     </footer>
+    <script>
+        const dropdownBtn = document.querySelector('.dropbtn');
+const dropdownContent = document.querySelector('.dropdown-content');
+
+dropdownBtn.addEventListener('click', function() {
+  dropdownContent.style.display = (dropdownContent.style.display === 'block') ? 'none' : 'block';
+});
+
+const blackDropdownBtn = document.querySelector('.black-dropbtn');
+const blackDropdownContent = document.querySelector('.dropdown-content');
+
+blackDropdownBtn.addEventListener('click', function() {
+  dropdownContent.style.display = (dropdownContent.style.display === 'block') ? 'none' : 'block';
+});
+
+    </script>
 </body>
 </html>
