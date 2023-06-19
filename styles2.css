@@ -1,0 +1,84 @@
+
+body{
+    background-color: #D9D3C8;
+    padding: 0;
+    margin: 0;
+}
+
+.background{
+    background-image: url(media/b163451c-f51a-4e4e-86a9-3f11c7212017.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:top center;
+    padding: 30px;
+}
+
+.header{
+    display: flex;
+    margin-bottom: 15%;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.header-links{
+    display: flex;
+    font-size: 24px;
+    gap: 20px;
+    margin-left: auto;
+    flex-wrap: wrap;
+}
+
+h1{
+    text-align: center;
+    font-size: 5rem;
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+      font-size: 3rem;
+    }
+}
+
+.arrow-icon {
+    margin-bottom: 300px;
+}
+
+.subscribe-form {
+    background-color: black;
+    color: white;
+    padding: 50px;
+    display: flex;
+    gap: 20px;
+    margin-top: -200px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.subscribe-form>.text{
+    max-width: 60%;
+}
+
+.text>h2{
+    font-size: 3rem;
+}
+
+.text>h3{
+    font-size: 2rem;
+    font-weight: 100;
+}
+
+#myForm>input{
+    min-height: 40px;
+    font-size: 24px;
+}
+
+#myForm {
+    display: flex;
+    flex: auto;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+}
