@@ -11,20 +11,31 @@
     </head>
     <body>
         <div class="background">
-            <!--1st Page-->
+            <!--1st Page Header and Title-->
             <div class="header">
             <div class="title">Sabiduría Moderna</div>
-                <div class="header-links">
-                    <div>Blog</div>
-                    <div>Subscríbete</div>
-                    <div>Twitter</div>
-                    <div>Discord</div>
-                </div>
+            <div class="header-links">
+                <div>Blog</div>
+                <div>Subscríbete</div>
+                <img style="margin-top: -10px;" src="media/iconmonstr-twitter-1 (1).svg"> 
+                <img style="margin-top: -10px;" src="media/discord-icon-svgrepo-com (1).svg">
+            </div>
+
+                <nav class="header-nav-dropdown">
+                    <img class="dropbtn" src="media/menu-button-of-three-horizontal-lines-svgrepo-com.svg"> 
+                    <div class="dropdown-content">
+                        <img class="black-dropbtn" src="media/blackdropdowncanva.png">
+                        <a class="header-link" href="#articulos">Blog</a>
+                        <a>Subscríbete</a>
+                        <a class="header-link" >Twitter</a>
+                        <a>Discord</a>
+                    </div>
+                </nav>
             </div>
             <h1>SABIDURÍA ANTIGUA PARA EL HOMBRE MODERNO</h1>
-            <div class="arrow-icon">Scroll Down</div>
-        </div>
-            <!--Second Page-->
+            <a href="#first-jump"><image class="down-arrow" width="50px" src="media/down-arrow-svgrepo-com.svg" href="media/down-arrow-svgrepo-com.svg"></a>
+            <div id="first-jump"></div>
+            <!--Second Page Subscribe Form-->
             <div class="subscribe-form">
                 <div class="text">
                     <h2>Subscríbete para recibir contenido y formar parte de la comunidad.</h2>
@@ -36,13 +47,59 @@
                         <input type="submit" value="Subscríbete" class="button">
                 </form>
             </div> 
-            
-            <!--3rd page-->
-            <div class="links">
-                <span>Blog</span>
-                <span>Twitter</span>
-                <span>Discord</span>
+
+            <!--1st Blog post-->
+            <div class="first-blogpost">
+                <a href="articles/la-crisis-del-sentido.html"><div class="first-blogpost-img">
+                    <p>La crísis del sentido (Y como resolverla)</p>
+                </div></a>
+                
+                <div class="first-blogpost-text">
+                    <p>En este artículo hago una exploración de lo que ha pasado en la modernidad desde que abandonamos la tradición y adoptamos a la ciencia como nuestro nuevo díos. Si has batallado con encontrarle el sentido a la vida, este artículo te va a dar la solución para que dejes de sentirté perdido y puedas gozar del momento una véz más.</p>
+                    <a href="articles/la-crisis-del-sentido.html">Continuar leyendo →</a>
+                </div>
             </div>
-       
+        </div>
+
+        <!--Trending Blog Posts-->
+        <div class="trending-blogposts">
+            <div class="first-trending-blogpost, blogpost">
+                <p></p>
+            </div>
+            <div class="second-and-third-trending-blogpost, blogpost">
+                <div class="second-blogpost, blogpost">
+                    <p></p>
+                </div>
+                <div class="third-blogpost, blogpost">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+        <!--3rd page-->
+        <div class="links">
+            <span>Blog</span>
+            <span>Twitter</span>
+            <span>Discord</span>
+        </div>
+        <!--Footer-->
+        <footer>
+            <a href="pages/sources.html">Fuentes</a>
+        </footer>
+        <script>
+            const dropdownBtn = document.querySelector('.dropbtn');
+    const dropdownContent = document.querySelector('.dropdown-content');
+    
+    dropdownBtn.addEventListener('click', function() {
+      dropdownContent.style.display = (dropdownContent.style.display === 'block') ? 'none' : 'block';
+    });
+    
+    const blackDropdownBtn = document.querySelector('.black-dropbtn');
+    const blackDropdownContent = document.querySelector('.dropdown-content');
+    
+    blackDropdownBtn.addEventListener('click', function() {
+      dropdownContent.style.display = (dropdownContent.style.display === 'block') ? 'none' : 'block';
+    });
+    
+        </script>
     </body>
 </html>
