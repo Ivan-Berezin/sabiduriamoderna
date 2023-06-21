@@ -16,6 +16,7 @@ body {
 
 .header {
     display: flex;
+    gap: 45px;
 }
 
 .title {
