@@ -1,111 +1,105 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="media/favicon.ico" type="image/x-icon">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="media/favicon.ico" type="image/x-icon">
 
-    <link rel="stylesheet" href="styles.css">
-    <title>Sabiduría Moderna</title>
-</head>
-<body >
-    <div  class="background-image" style="background-image: url(media/b163451c-f51a-4e4e-86a9-3f11c7212017.jpg);">
-        <header class="header">
-            <div class="Sabiduria-Moderna">Sabiduría Moderna</div>
-            <nav class="header-nav">
-                <a class="header-link" href="#articulos">Blog</a>
-                <a class="header-link" href="#subscribe-section">Subscríbete</a>
-                <a class="header-link" href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg></a>
-                <a class="header-link" href=""> <object data="media/636e0a6918e57475a843f59f_icon_clyde_black_RGB.svg" width="24" height="24"> </object></a>
-            </nav>
+        <link rel="stylesheet" href="styles.css">
+        <title>Sabiduría Moderna</title>
+    </head>
+    <body>
+        <div class="background">
+            <!--1st Page Header and Title-->
+            <div class="header">
+            <div class="title">Sabiduría Moderna</div>
+            <div class="header-links">
+                <div>Blog</div>
+                <div>Subscríbete</div>
+                <img style="margin-top: -10px;" src="media/iconmonstr-twitter-1 (1).svg"> 
+                <img style="margin-top: -10px;" src="media/discord-icon-svgrepo-com (1).svg">
+            </div>
 
                 <nav class="header-nav-dropdown">
-                    <img class="dropbtn" src="media/dropdowncanva.png"> 
+                    <img class="dropbtn" src="media/menu-button-of-three-horizontal-lines-svgrepo-com.svg"> 
                     <div class="dropdown-content">
                         <img class="black-dropbtn" src="media/blackdropdowncanva.png">
                         <a class="header-link" href="#articulos">Blog</a>
+                        <a>Subscríbete</a>
                         <a class="header-link" >Twitter</a>
+                        <a>Discord</a>
                     </div>
                 </nav>
-        </header>
-
-
-
-        
-    <!--
-        <div class="intro1">
-            <img class="school-of-athens" src="media/Sabiduría antigua para el hombre moderno.png">
-            <h1 class="title">Sabiduría Antigua para el Hombre Moderno</h1>
-        </div> -->
-        
-        <div class="intro2">
-            <h1>Sabiduría Antigua para el Hombre Moderno</h1>
-        </div>
-
-        
-
-        <div class="subscribe-section" id="subscribe-section">
-            <div class="subscribe-text">
-                <h2>Subscríbete para recibir contenido y formar parte de la comunidad.</h2>
-                <h3>Al subscribirte te enviaré un enlace para formar parte de la comunidad. También podre compartirte los artículos recién los público, ofrecerte distintas ofertas, y crear un espacio para el diálogo.</h3>
-                <!--Averiguar como poner un input para recibir su informacion de mail y nombres aqui-->
             </div>
-            <div class="subscribe">
+            <h1>SABIDURÍA ANTIGUA PARA EL HOMBRE MODERNO</h1>
+            <a href="#first-jump"><image class="down-arrow" width="50px" src="media/down-arrow-svgrepo-com.svg" href="media/down-arrow-svgrepo-com.svg"></a>
+            <div id="first-jump"></div>
+            <!--Second Page Subscribe Form-->
+            <div class="subscribe-form">
+                <div class="text">
+                    <h2>Subscríbete para recibir contenido y formar parte de la comunidad.</h2>
+                    <h3>Al subscribirte te enviaré un enlace para formar parte de la comunidad. También podre compartirte los artículos recién los público, ofrecerte distintas ofertas, y crear un espacio para el diálogo.</h3>
+                </div>
                 <form id="myForm" action="https://formsubmit.co/ibhol1702@gmail.com" method="POST">
-                    <input type="text" id="name" name="name" placeholder="Tu nombre" required class="mail">
-                    <input type="email" id="email" name="email" placeholder="tu@email.com" required class="mail">
-                    <input type="submit" value="Subscríbete" class="button">
+                        <input type="text" id="name" name="name" placeholder="Tu nombre" required class="mail">
+                        <input type="email" id="email" name="email" placeholder="tu@email.com" required class="mail">
+                        <input type="submit" value="Subscríbete" class="button">
                 </form>
+            </div> 
+
+            <!--1st Blog post-->
+            <div class="first-blogpost">
+                <a href="articles/la-crisis-del-sentido.html"><div class="first-blogpost-img">
+                    <p>La crísis del sentido (Y como resolverla)</p>
+                </div></a>
                 
+                <div class="first-blogpost-text">
+                    <p>En este artículo hago una exploración de lo que ha pasado en la modernidad desde que abandonamos la tradición y adoptamos a la ciencia como nuestro nuevo díos. Si has batallado con encontrarle el sentido a la vida, este artículo te va a dar la solución para que dejes de sentirté perdido y puedas gozar del momento una véz más.</p>
+                    <a href="articles/la-crisis-del-sentido.html">Continuar leyendo →</a>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="page-break" id="articulos"></div>
-   <!--
-    <div class="articles">
-        <h2>Artículos</h2>
-        <div class="article-repo">
-           
-            <div class="first-article article" >
-                <a class="article-link" href="articles/la-crisis-del-sentido.html">
-                <img src="media/Aristoteles.jpg" class="article-img">
-                <h3>La crisís del Sentido (y como resolverla)</h3>
-                <h4>12 Junio 2023</h4>
-                <p>En este artículo hago una exploración de lo que ha pasado en la modernidad desde que abandonamos la tradición y adoptamos a la ciencia como nuestro nuevo díos. Si has batallado con encontrarle el sentido a la vida, este artículo te va a dar la solución para que dejes de sentirté perdido y puedas gozar del momento una véz más.</p>
-                </a>
+
+        <!--Trending Blog Posts-->
+        <div class="trending-blogposts">
+            <div class="first-trending-blogpost, blogpost">
+                <p></p>
             </div>
-        
-            <div class="second-article article" >
-                <a class="article-link" href="">
-                <img src="media/Socrates.jpg" class="article-img">
-                <h3>Como hacer amigos como Socrates</h3>
-                <h4>12 Junio 2023</h4>
-                <p>¿Tienes dificultades haciendo amigos? ¿No entiendes bien exactamente qué es un amigo? En este ensayo realizó un analísis del Lisis un texto Socratico donde Socrates nos enseña el arte de hacer amigos. ¿Podrá ser algo más sencillo de lo que uno cree?</p>
-                </a>
+            <div class="second-and-third-trending-blogpost, blogpost">
+                <div class="second-blogpost, blogpost">
+                    <p></p>
+                </div>
+                <div class="third-blogpost, blogpost">
+                    <p></p>
+                </div>
             </div>
         </div>
-    </div> 
+        <!--3rd page-->
+        <div class="links">
+            <span><u>Blog</u></span>
+            <span><u>Twitter</u></span>
+            <span><u>Discord</u></span>
+        </div>
+        <!--Footer-->
+        <footer>
+            <a href="pages/sources.html">Fuentes</a>
+        </footer>
+        <script>
+            const dropdownBtn = document.querySelector('.dropbtn');
+    const dropdownContent = document.querySelector('.dropdown-content');
     
-    <footer class="footer">
-        <div><a href="pages/sources.html" class="footer-text">Fuentes</a></div>
-    </footer>
-    -->
-    <script>
-        const dropdownBtn = document.querySelector('.dropbtn');
-const dropdownContent = document.querySelector('.dropdown-content');
-
-dropdownBtn.addEventListener('click', function() {
-  dropdownContent.style.display = (dropdownContent.style.display === 'block') ? 'none' : 'block';
-});
-
-const blackDropdownBtn = document.querySelector('.black-dropbtn');
-const blackDropdownContent = document.querySelector('.dropdown-content');
-
-blackDropdownBtn.addEventListener('click', function() {
-  dropdownContent.style.display = (dropdownContent.style.display === 'block') ? 'none' : 'block';
-});
-
-    </script>
-</body>
+    dropdownBtn.addEventListener('click', function() {
+      dropdownContent.style.display = (dropdownContent.style.display === 'block') ? 'none' : 'block';
+    });
+    
+    const blackDropdownBtn = document.querySelector('.black-dropbtn');
+    const blackDropdownContent = document.querySelector('.dropdown-content');
+    
+    blackDropdownBtn.addEventListener('click', function() {
+      dropdownContent.style.display = (dropdownContent.style.display === 'block') ? 'none' : 'block';
+    });
+    
+        </script>
+    </body>
 </html>
