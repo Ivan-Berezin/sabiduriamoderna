@@ -402,3 +402,45 @@ margin-top: 10%;
 .header-links>.subscribe-subscribe-link {
     text-decoration-line: underline;
 }
+
+
+/* ARTICLE OUTLINE ARTICLE OUTLINE ARTICLE OUTLINE */
+
+.article-article{
+    margin-top: 10%;
+}
+
+.article-blogpost-img {
+    background-image: url(media/Aristoteles.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 300px;
+    background-position: 50% 50%;
+    color: white;
+    position: relative;
+    padding: 20px;
+}
+
+
+.article-blogpost-img>p{
+    bottom: 0;
+    position: absolute;
+    font-weight: 900;
+    font-size: 50px;
+}
+
+@media screen and (max-width: 580px) {
+    .article-blogpost-img>p{
+        font-size: 36px;
+    }
+}
+
+.article-title>a{
+    text-decoration: none;
+    color: white;
+}
+
+.article-title>a:hover{
+    text-decoration: none;
+    color: black;
+}
