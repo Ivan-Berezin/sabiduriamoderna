@@ -129,7 +129,7 @@ a:hover>svg{
  
    }
 
-h1 {
+h2 {
     margin-top: 15%;
     text-align: center;
     font-size: 8rem;
@@ -137,13 +137,13 @@ h1 {
 }
 
 @media screen and (max-width: 1000px) {
-    h1 {
+    h2 {
         font-size: 6rem;
     }
 }
 
 @media screen and (max-width: 560px) {
-    h1 {
+    h2 {
         font-size: 3.5rem;
     }
 }
@@ -201,23 +201,23 @@ h1 {
    /* max-width: 60%; */
 }
 
-.text>h2 {
+.text>h3 {
     font-size: 3rem;
     margin-bottom: 10px;
 }
 
-.text>h3 {
+.text>h4 {
     font-size: 2rem;
     font-weight: 100;
     margin-top: 0;
 }
 
 @media screen and (max-width: 580px) {
-    .text>h2 {
+    .text>h3 {
         font-size: 2rem;
     }
 
-    .text>h3 {
+    .text>h4 {
         font-size: 1.5rem;
     }
 }
