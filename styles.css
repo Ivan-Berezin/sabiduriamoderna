@@ -4,10 +4,10 @@ body {
 }
 
 .background {
-    background-image: url(media/c2ec6c39-6a34-4ecb-8799-eca6ad297eda.jpg);
+    background-image: url(media/thereader.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position:center center;
+    background-position:center -100px;
     padding: 30px;
     padding-top: 40px;
 }
@@ -151,7 +151,7 @@ h2 {
 }
 
 .down-arrow {
-    margin-top: 15%;
+    margin-top: 10%;
     margin-left: auto;
     margin-right: auto;
     display: block;
