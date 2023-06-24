@@ -136,22 +136,41 @@ h2 {
     color: white;
     padding-right: 10%;
     padding-left: 10%;
+    margin-bottom: 20%;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1250px) {
     h2 {
         font-size: 5rem;
     }
 }
 
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 800px) {
     h2 {
-        font-size: 2.5rem;
+        font-size: 4rem;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    h2 {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    h2 {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    h2 {
+        font-size: 1.5rem;
     }
 }
 
 .down-arrow {
-    margin-top: 10%;
+    margin-top: -5%;
     margin-left: auto;
     margin-right: auto;
     display: block;
@@ -160,6 +179,12 @@ h2 {
 .down-arrow:hover{
     fill: black;
     color: black;
+}
+
+@media screen and (max-width:1500px) {
+    .down-arrow{
+        display: none;
+    }
 }
 
 #first-jump {
@@ -184,6 +209,7 @@ h2 {
     .subscribe-form{
         margin-left: 10%;
         margin-right: 10%;
+
     }
     
 }
@@ -335,8 +361,20 @@ h2 {
 }
 
 @media screen and (max-width: 580px) {
-    .first-blogpost-img>p{
+    .first-blogpost-title>p{
         font-size: 36px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .first-blogpost-title>p{
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 270px) {
+    .first-blogpost-title>p{
+        font-size: 22px;
     }
 }
 
