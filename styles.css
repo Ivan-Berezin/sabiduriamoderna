@@ -7,7 +7,7 @@ body {
     background-image: url(media/thereader.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position:center -100px;
+    background-position:center center;
     padding: 30px;
     padding-top: 40px;
 }
@@ -47,7 +47,7 @@ body {
 }
 
 .header-links>a:hover{
-    color: rgb(22, 22, 22);
+    color: black;
 }
 
 a:hover>svg{
@@ -289,7 +289,6 @@ h2 {
 }
 
 .first-blogpost-img {
-    background-image: url(media/Aristoteles.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 300px;
@@ -298,6 +297,29 @@ h2 {
     position: relative;
     padding: 20px;
 }
+
+.first-blogpost-title {
+    color: black;
+    font-weight: 900;
+    font-size: 40px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-decoration-line: none;
+}
+
+.first-blogpost-title>p {
+    color: black;
+    font-weight: 900;
+    font-size: 40px;
+    margin: 0;
+    text-decoration-line: none;
+}
+
+.first-blogpost>a {
+    text-decoration-line: none;
+}
+
 
 .first-blogpost-img:hover {
     -webkit-filter: grayscale(100%);
@@ -308,6 +330,8 @@ h2 {
     position: absolute;
     font-weight: 900;
     font-size: 50px;
+    margin-right: 20px;
+    padding: 10px;
 }
 
 @media screen and (max-width: 580px) {
@@ -319,8 +343,15 @@ h2 {
 .first-blogpost-text{
     position: relative;
     font-size: 24px;
-    padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
 }
+
+.first-blogpost-text>p{
+    margin-top: 5px;
+}
+
 
 .first-blogpost-text>a:hover{
     color: black;
@@ -364,7 +395,6 @@ h2 {
 footer{
     background-color: black;
     padding-top: 20px;
-    padding-left: 20px;
     padding-bottom: 50px;
     font-size: 18px;
     text-align: center;
@@ -420,7 +450,6 @@ margin-top: 10%;
 }
 
 .article-blogpost-img {
-    background-image: url(media/Aristoteles.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 300px;
