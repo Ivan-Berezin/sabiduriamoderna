@@ -1,6 +1,7 @@
 body {
     padding: 0;
     margin: 0;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .background {
@@ -75,7 +76,7 @@ a:hover>svg{
      text-decoration-color: white;
      min-width: 100px;
      border-radius: 3%;
-     box-shadow: 0px 0px 10px 10px rgba(253, 253, 253, 0.438);
+     box-shadow: 0px 0px 0px 0px rgba(253, 253, 253, 0.438);
      padding: 6px 16px 12px;
      z-index: 1;
      margin-top: 0;
@@ -102,10 +103,55 @@ a:hover>svg{
     display: block;
     margin-top: 10px;
     text-align: center;
-    font-size: 36px;
+    font-size: 30px;
 }
+
+
+/* Dropdown Button */
+.dropbtn-hover {
+    background: none;
+    color: white;
+    font-size: 30px;
+    border: none;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown-hover {
+    position: relative;
+    right: 0;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-hover-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-hover-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-hover-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown-hover:hover .dropdown-hover-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown-hover:hover .dropbtn-hover {background-color: black}
  
-   @media screen and (max-width: 900px) {
+   @media screen and (max-width: 1000px) {
      .header-links {
        display: none;
      }
@@ -125,11 +171,10 @@ a:hover>svg{
      .Sabiduria-Moderna {
          align-self: center;
      }
-     
- 
    }
 
-h2 {
+
+   h2 {
     margin-top: 10%;
     text-align: center;
     font-size: 8rem;
@@ -176,7 +221,7 @@ h2 {
     display: block;
 }
 
-.down-arrow:hover{
+#XMLID_225:hover{
     fill: black;
     color: black;
 }
@@ -194,7 +239,7 @@ h2 {
 /*Subscribe Form*/
 
 .subscribe-form {
-    background-color: #D9D9D9;
+    background-color: #D7B69A;
     color: black;
     padding: 30px;
     display: flex;
@@ -432,17 +477,32 @@ h2 {
 /*Footer*/
 footer{
     background-color: black;
+    color: white;
     padding-top: 20px;
     padding-bottom: 50px;
-    font-size: 18px;
+    font-size: 22px;
     text-align: center;
+    margin-top: -20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+footer>div{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 
-footer>a {
+.footer-head{
+    font-weight: 900;
+}
+
+footer>div>a {
     color: rgb(218, 215, 215);
 }
 
-footer>a:hover {
+footer>div>a:hover {
     color: blue;
 }
 
