@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <link rel="stylesheet" href="../styles.css">
+        <title>Sabiduría Moderna</title>
+    </head>
+    <body>
+        <div class="background" style="background-position: center 20%;">
+            <!--1st Page Header and Title-->
+            <div class="header">
+            <div class="title blog-title"><a href="../index.html">Sabiduría Moderna</a></div>
+            <div class="header-links">
+                <a href="articles.html">Artículos</a>
+                <div class="dropdown-hover">
+                    <button class="dropbtn-hover">Redes</button>
+                    <div class="dropdown-hover-content">
+                      <a href="https://twitter.com/sabiduriamodern">Twitter</a>
+                      <a href="https://www.youtube.com/channel/UClzz3blOPV6_E0svP8paAmA">Youtube</a>
+                      <a href="https://www.instagram.com/sabiduriamodern/">Instagram</a>
+                      <a href="https://redcircle.com/shows/580c3d85-6ee5-460f-9b62-39f602db7d12">Podcast</a>
+                    </div>
+                </div>
+                <a href="subscribe.html">Subscríbete</a>
+            </div>
+
+                <nav class="header-nav-dropdown">
+                    <img class="dropbtn" src="../media/menu-button-of-three-horizontal-lines-svgrepo-com.svg"> 
+                    <div class="dropdown-content">
+                        <img class="black-dropbtn" src="../media/blackdropdowncanva.png">
+                        <a class="header-link" href="articles.html">Artículos</a>
+                        <div class="dropdown-hover" style="justify-self: center; display: block;">
+                            <button class="dropbtn-hover" style=" padding-left: 30px; margin-top: 10px;">Redes</button>
+                            <div class="dropdown-hover-content" style="text-align: center;">
+                              <a href="https://twitter.com/sabiduriamodern">Twitter</a>
+                              <a href="https://www.youtube.com/channel/UClzz3blOPV6_E0svP8paAmA">Youtube</a>
+                              <a href="https://www.instagram.com/sabiduriamodern/">Instagram</a>
+                              <a href="https://redcircle.com/shows/580c3d85-6ee5-460f-9b62-39f602db7d12">Podcast</a>
+                            </div>
+                        </div>
+                        <a href="subscribe.html">Subscríbete</a>
+                    </div>
+                </nav>
+            </div>
+            <!--Second Page Subscribe Form-->
+            <div class="subscribe-form .subscribe-subscribe-form" style="margin-top: 10vh;">
+                <div class="text">
+                    <h3>Si lo que has leído y escuchado de mi parte te ha inspirado a ser una mejor persona, con mis sesiones de coaching podras acelerar tu crecimiento gracias a mi formación y capacitación como Coach. Quiero verte llegar muy lejos. Yo se que puedes lograrlo.</h3>
+                    <h4>Comparteme tu nombre, tu contacto, el asunto, y algunas horas que te son comodas (incluyendo zona horaria) para conocernos y planear tu proceso.</h4>
+                </div>
+                <form id="myForm" action="https://formsubmit.co/ibhol1702@gmail.com" method="POST">
+                        <input type="text" id="name" name="name" placeholder="Tu nombre" required class="mail">
+                        <input type="email" id="email" name="email" placeholder="tu@email.com" required class="mail">
+                        <input type="text" id="name" name="name" placeholder="Tu nombre" required class="mail">
+                        <input type="text" id="phone" name="phone" placeholder="Tu telefono" required class="mail">
+                        <input type="text" id="asunto" name="asunto" placeholder="Asunto, días y horas disponibles" required class="mail asunto">
+                        <input type="submit" value="Subscríbete" class="button">
+                </form>
+            </div> 
+        </div>
+           
+        <!--Footer-->
+        <footer>
+            <div>
+                <div class="footer-head">Links</div>
+                <a href="articles.html">Artículos</a>
+                <a href="subscribe.html">Subscríbete</a>
+                <a href="sources.html">Fuentes</a>
+            </div>
+            <div>
+                <div class="footer-head">Redes</div>
+                <a href="https://twitter.com/sabiduriamodern">Twitter</a>
+                <a href="https://www.youtube.com/channel/UClzz3blOPV6_E0svP8paAmA">YouTube</a>
+                <a href="https://www.instagram.com/sabiduriamodern/">Instagram</a>
+                <a href="https://redcircle.com/shows/580c3d85-6ee5-460f-9b62-39f602db7d12">Podcast</a>
+            </div>
+            <div>
+                    <div class="footer-head">Contactanos</div>
+                    <span>+52 55 4890 7355</span>
+                    <span>ibhol1702@gmail.com</span>
+            </div>
+        </footer>
+        <script>
+            const dropdownBtn = document.querySelector('.dropbtn');
+    const dropdownContent = document.querySelector('.dropdown-content');
+    
+    dropdownBtn.addEventListener('click', function() {
+      dropdownContent.style.display = (dropdownContent.style.display === 'block') ? 'none' : 'block';
+    });
+    
+    const blackDropdownBtn = document.querySelector('.black-dropbtn');
+    const blackDropdownContent = document.querySelector('.dropdown-content');
+    
+    blackDropdownBtn.addEventListener('click', function() {
+      dropdownContent.style.display = (dropdownContent.style.display === 'block') ? 'none' : 'block';
+    });
+    
+        </script>
+    </body>
+</html>
